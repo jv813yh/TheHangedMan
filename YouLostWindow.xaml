@@ -1,0 +1,30 @@
+﻿<Window x:Class="TheHangedMan.YouLostWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheHangedMan"
+        mc:Ignorable="d"
+        
+        Height="300" Width="600"
+        MinHeight="300" MinWidth="600"
+        WindowStartupLocation="CenterScreen"
+        Icon="images/gallow.ico">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <TextBlock Text="YOU LOST !" Foreground="DarkRed"
+                       FontWeight="Black" FontSize="26"/>
+
+            <TextBlock Text="The searched word was:" Foreground="Black"
+                       FontWeight="Medium" FontSize="16"
+                       Padding="0,10,0,0"/>
+
+            <TextBlock Text="{Binding}" Foreground="Black"
+                       FontWeight="Black" FontSize="19"
+                       Padding="0,10,0,0"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

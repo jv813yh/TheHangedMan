@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\gallow.ico" />
+    <None Remove="images\image1.png" />
+    <None Remove="images\image10.png" />
+    <None Remove="images\image11.png" />
+    <None Remove="images\image2.png" />
+    <None Remove="images\image3.png" />
+    <None Remove="images\image4.png" />
+    <None Remove="images\image5.png" />
+    <None Remove="images\image6.png" />
+    <None Remove="images\image7.png" />
+    <None Remove="images\image8.png" />
+    <None Remove="images\image9.png" />
+    <None Remove="images\thehangedman.JPG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\gallow.ico" />
+    <Resource Include="images\image1.png" />
+    <Resource Include="images\image10.png" />
+    <Resource Include="images\image11.png" />
+    <Resource Include="images\image2.png" />
+    <Resource Include="images\image3.png" />
+    <Resource Include="images\image4.png" />
+    <Resource Include="images\image5.png" />
+    <Resource Include="images\image6.png" />
+    <Resource Include="images\image7.png" />
+    <Resource Include="images\image8.png" />
+    <Resource Include="images\image9.png" />
+    <Resource Include="images\thehangedman.JPG" />
+  </ItemGroup>
+
+</Project>
