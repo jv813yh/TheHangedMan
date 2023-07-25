@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\ke01140\source\repos\TheHangedMan\App.xaml
-4529971842
+5-1991680225
 
-12549718016
+13-128847697
 194-200944676
-Game.xaml;MainWindow.xaml;NewPlayer.xaml;YouLostWindow.xaml;
+Game.xaml;ListThePlayers.xaml;MainWindow.xaml;NewPlayer.xaml;YouLostWindow.xaml;
 
-True
+False
 

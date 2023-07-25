@@ -26,3 +26,5 @@ C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\NewPlayer.g.
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\NewPlayer.baml
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\YouLostWindow.g.cs
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\YouLostWindow.baml
+C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\ListThePlayers.g.cs
+C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\ListThePlayers.baml

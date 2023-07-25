@@ -18,8 +18,7 @@
                        FontWeight="Black"/>
 
             <TextBox x:Name="EnterYourNameTxtBox" HorizontalAlignment="Center"
-                     Text="{Binding}"
-                     FontSize="25" Width="300" Margin="20"/>
+                    FontSize="25" Width="300" Margin="20"/>
 
             <Button Content="OK" IsDefault="True"
                     Click="SaveBtnClick" HorizontalAlignment="Center"

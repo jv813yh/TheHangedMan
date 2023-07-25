@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
-using System.Collections.ObjectModel;
 using System.Windows;
 
 namespace TheHangedMan
@@ -12,10 +7,9 @@ namespace TheHangedMan
     /// <summary>
     /// A class that contains the game logic and its processing. 
     /// Here is the generation of the guessed word, the checking 
-    /// of the guessed letters, the drawing of the picture of the 
-    /// hanged man and the processing of the results.
+    /// of the guessed letters
     /// </summary>
-    class GameLogic
+    public class GameLogic
     {
         /// <summary>
         /// Load the file and return one random word from the file

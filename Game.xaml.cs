@@ -4,15 +4,23 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
+
+/* 
+ * 
+ * Author Jozef Vendel
+ * Date 19.07.2023, version 1.0
+ * Simple hanged man game where you guess a word 
+ * one letter at a time and if you don't guess, you hang the boy
+ * 
+ * Class handles the dialog window for the game itself, 
+ * accepts characters entered by the user, checks the match 
+ * with the word, draws a picture, evaluates whether 
+ * the player won or lost
+ *
+ */
 
 namespace TheHangedMan
 {
@@ -53,6 +61,10 @@ namespace TheHangedMan
                 }
             }
         }
+
+        // the event allows notifying other objects that the value
+        // of property of the object on which this event is
+        // invoked has changed -> spacedHiddenWord
         public event PropertyChangedEventHandler PropertyChanged;
 
         public Game()
@@ -95,6 +107,9 @@ namespace TheHangedMan
 
                 // close current dialog window
                 dialogWindow.Close();
+
+                Game newGame = new Game();
+                newGame.Show();
             }
             catch (Exception ex)
             {
@@ -103,9 +118,16 @@ namespace TheHangedMan
             }
         }
 
+        /// <summary>
+        /// function to display the list of players
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnTheBestPlayers_Click(object sender, RoutedEventArgs e)
         {
-           MessageBox.Show("HU");
+            ListThePlayers listThePlayers = new ListThePlayers();
+
+            listThePlayers.ShowDialog();
         }
 
         /// <summary>
@@ -136,8 +158,6 @@ namespace TheHangedMan
                 {
                     ScorePlayer++;
 
-                    MessageBox.Show($"Your index is {indexOfChar}", "Notification", MessageBoxButton.OK , MessageBoxImage.Information);
-
                     // 3. comment
                     // management of the string guessWord according to guessed characters
                     StringBuilder spacedHiddenWord = new StringBuilder(SpacedHiddenWord);
@@ -164,13 +184,25 @@ namespace TheHangedMan
                     {
                         YouLostWindow youLostWindow = new YouLostWindow(GuessWord);
                         youLostWindow.ShowDialog();
+
+                        // reference to the current dialog window
+                        Window dialogWindow = Window.GetWindow(this);
+
+                        // close current dialog window
+                        dialogWindow.Close();
                     }
                 }
 
+                // you gessed the word
                 if(!SpacedHiddenWord.Any(item => item == '_'))
                 {
                     MessageBox.Show("You guessed the whole word", "Congratulations ;)", 
                         MessageBoxButton.OK, MessageBoxImage.Information);
+
+
+                    // create new dialog window
+                    NewPlayer newPlayer = new NewPlayer(ScorePlayer, MissAttempts);
+                    newPlayer.ShowDialog();
                 }
             }
             catch (Exception ex)
