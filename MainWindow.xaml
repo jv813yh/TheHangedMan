@@ -6,11 +6,13 @@
         xmlns:Shapes="clr-namespace:System.Windows.Shapes;assembly=PresentationFramework"
         xmlns:local="clr-namespace:TheHangedMan"
         mc:Ignorable="d"
-        Title="Game Rules" Height="450" Width="600" Icon="images\gallow.ico" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="Game Rules" Height="550" Width="580" Icon="images\gallow.ico" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
             <RowDefinition Height="0.5*"/>
@@ -22,11 +24,15 @@
 
         <TextBlock Text="You keep entering one letter at a time" Grid.Row="2" Grid.Column="1" Margin="20"
                FontSize="16" FontWeight="Bold" FontFamily="Arial" />
-        <TextBlock Text="You have to guess at least one word for me to remember you" Grid.Row="3" Grid.Column="1" Margin="20"
+        <TextBlock Text="You have 11 attempts to guess the word you are looking for" Grid.Row="3" Grid.Column="1" Margin="20"
                FontSize="16" FontWeight="Bold" FontFamily="Arial" />
         <TextBlock Text="You guess the words and try not to hang the boy" Grid.Row="1" Grid.Column="1" Margin="20"
                FontSize="16" FontWeight="Bold" FontFamily="Arial" />
-        <TextBlock Text="I wish you a pleasant entertainment" Grid.Row="4" Grid.Column="1" Margin="20"
+        <TextBlock Text="One character can be repeated in the word more than once" Grid.Row="4" Grid.Column="1" Margin="20"
+               FontSize="16" FontWeight="Bold" FontFamily="Arial" />
+        <TextBlock Text="If you guess it, it will be displayed only once" Grid.Row="5" Grid.Column="1" Margin="20"
+               FontSize="16" FontWeight="Bold" FontFamily="Arial" />
+        <TextBlock Text="I wish you a pleasant entertainment" Grid.Row="6" Grid.Column="1" Margin="20"
                FontSize="16" FontWeight="Bold" FontFamily="Arial" />
         <TextBlock Text="Game Info" Grid.Row="0" Margin="20,50,0,0" FontSize="30" FontWeight="Bold" FontFamily="Arial"/>
 
@@ -35,7 +41,7 @@
             <TextBlock Text="The Hanged Man" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="SteelBlue"
                    FontSize="20" FontWeight="Heavy"/>
         </Grid>
-        <Button Content="Let's play" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80"
+        <Button Content="Let's play" Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80"
                 Height="30" Margin="0,0,0,10" FontFamily="Arial" Click="ClickBtn"/>
     </Grid>
 

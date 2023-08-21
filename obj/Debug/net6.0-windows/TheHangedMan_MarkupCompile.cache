@@ -1,20 +1,20 @@
 ﻿TheHangedMan
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\
+C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\
 TheHangedMan
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-c:\Users\ke01140\source\repos\TheHangedMan\App.xaml
+C:\Users\ke01140\source\repos\TheHangedMan\App.xaml
 5-1991680225
 
-13-128847697
+111549131575
 194-200944676
 Game.xaml;ListThePlayers.xaml;MainWindow.xaml;NewPlayer.xaml;YouLostWindow.xaml;
 
-True
+False
 

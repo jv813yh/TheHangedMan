@@ -75,7 +75,7 @@ namespace TheHangedMan
             GuessWord = GameLogic.LoadFileReturWord();
             if(!string.IsNullOrEmpty(GuessWord))
             {
-                MessageBox.Show(GuessWord, "GuessWord:", MessageBoxButton.OK);
+               // MessageBox.Show(GuessWord, "GuessWord:", MessageBoxButton.OK);
 
                 // setting a hidden word with letters like '_ '
                 SpacedHiddenWord = string.Join(" ", GuessWord.Select(c => '_'));
@@ -230,13 +230,15 @@ namespace TheHangedMan
         /// <param name="numberOfMistakes"></param>
         public void UpdateImageVisibility(int numberOfMistakes)
         {
+            // saved images in a List
             List<Image> imagesList = new List<Image>
             {
                 image1, image2, image3, image4, image5, image6, image7,
                 image8, image9, image10, image11
             };
 
-            for(int i = 0; i < imagesList.Count; i++)
+            // according to the number of mistakes, pictures are revealed
+            for (int i = 0; i < imagesList.Count; i++)
             {
                 imagesList[i].Visibility = (i < numberOfMistakes) ? 
                     Visibility.Visible : Visibility.Hidden;

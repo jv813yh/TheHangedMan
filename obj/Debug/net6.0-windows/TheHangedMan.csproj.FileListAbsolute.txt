@@ -21,7 +21,6 @@ C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\TheHangedMan
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\ref\TheHangedMan.dll
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\Game.g.cs
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\Game.baml
-C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\NewPlayer.g.cs
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\NewPlayer.baml
 C:\Users\ke01140\source\repos\TheHangedMan\obj\Debug\net6.0-windows\YouLostWindow.g.cs
