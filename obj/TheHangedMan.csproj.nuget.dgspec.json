@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ke01140\\source\\repos\\TheHangedMan\\TheHangedMan.csproj": {}
+    "C:\\Users\\ke01140\\source\\repos\\skusam\\TheHangedMan\\TheHangedMan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ke01140\\source\\repos\\TheHangedMan\\TheHangedMan.csproj": {
+    "C:\\Users\\ke01140\\source\\repos\\skusam\\TheHangedMan\\TheHangedMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ke01140\\source\\repos\\TheHangedMan\\TheHangedMan.csproj",
+        "projectUniqueName": "C:\\Users\\ke01140\\source\\repos\\skusam\\TheHangedMan\\TheHangedMan.csproj",
         "projectName": "TheHangedMan",
-        "projectPath": "C:\\Users\\ke01140\\source\\repos\\TheHangedMan\\TheHangedMan.csproj",
+        "projectPath": "C:\\Users\\ke01140\\source\\repos\\skusam\\TheHangedMan\\TheHangedMan.csproj",
         "packagesPath": "C:\\Users\\ke01140\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ke01140\\source\\repos\\TheHangedMan\\obj\\",
+        "outputPath": "C:\\Users\\ke01140\\source\\repos\\skusam\\TheHangedMan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ke01140\\AppData\\Roaming\\NuGet\\NuGet.Config",
